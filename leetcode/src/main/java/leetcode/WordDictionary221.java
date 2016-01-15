@@ -55,12 +55,15 @@ public class WordDictionary221 {
 				int size = parents.size();
 				if (size == 0)
 					return false;
+				int index = 0;
 				for (int count = 0; count < size; count ++){
-					if (!parents.get(0).validChildren(letter).isEmpty())
-						parents.addAll(parents.get(0).validChildren(letter));
+					if (!parents.get(index).validChildren(letter).isEmpty())
+						parents.addAll(parents.get(index).validChildren(letter));
 					if (letter != '.')
 						parents.remove(0);
-				}
+					else
+						index ++;
+				}	
 			}
 			return true;
 		}
