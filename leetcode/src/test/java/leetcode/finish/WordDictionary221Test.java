@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.finish;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import junit.framework.TestCase;
+import leetcode.WordDictionary221;
 
 import com.litb.basic.io.FileHelper;
 

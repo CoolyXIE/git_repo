@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.finish;
 
 import junit.framework.TestCase;
 

@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.finish;
 
 public class UglyNumber263 {
 
