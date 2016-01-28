@@ -2,6 +2,7 @@ package leetcode;
 
 import tree.Tree;
 import junit.framework.TestCase;
+import leetcode.finish.MinimumDepthOfBinaryTree111;
 
 public class MinimumDepthOfBinaryTree111Test extends TestCase {
 	MinimumDepthOfBinaryTree111 tree = new MinimumDepthOfBinaryTree111();

@@ -1,4 +1,10 @@
-from numpy import *
+from array import array
+
+from numpy import  exp, mat, shape, ones, arange
+
+import matplotlib.pyplot as plt 
+import logRegres
+
 
 def loadDataSet(filePath):
     dataSet = []
@@ -26,8 +32,18 @@ def gradAscent(dataSet, labelVec):
         weights = weights + alpha * dataMat.transpose() * err
     return weights
 
+def stocGradAscent0(dataSet, labelVec):
+    dataArr = array(dataSet)
+    m, n = shape(dataSet);
+    alpha = 0.01
+    weights = ones(n)
+    for i in range(m):
+        h = sigmoid(sum(dataSet[i]*weights))
+        error = labelVec[i] - h
+        weights = weights + alpha * error * dataArr[i]
+    return weights
+
 def plot(weights):
-    import matplotlib.pyplot as plt
     w = weights.getA()
     dataSet, labelVec = loadDataSet('E:/data/python/Ch05/testSet.txt')
     dataArr = array(dataSet)
@@ -56,5 +72,8 @@ def plot(weights):
 
 
 dataSet, labelVec = loadDataSet('E:/data/python/Ch05/testSet.txt')
-plot(gradAscent(dataSet, labelVec))
+plot(stocGradAscent0(dataSet, labelVec))
 
+
+# logRegres.plotBestFit(stocGradAscent0(dataSet, labelVec))
+# plot(stocGradAscent0(dataSet, labelVec))
