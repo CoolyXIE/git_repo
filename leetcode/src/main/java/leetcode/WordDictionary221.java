@@ -27,7 +27,7 @@ public class WordDictionary221 {
 		}
 	}
 
-	public void insert(Node parent, String subWord) {
+	private void insert(Node parent, String subWord) {
 		for (int i = 0; i < subWord.length(); i ++){
 			char letter = subWord.charAt(i);
 			Node newNode = new Node(subWord.charAt(i));
@@ -84,15 +84,6 @@ class Node{
 	public Node(char letter){
 		this.letter = letter;
 		children = new Node[26];
-	}
-	
-	public List<Node> validChildren(){
-		List<Node> list = new ArrayList<Node>();
-		for (int i = 0; i < 26; i ++){
-			if (children[i] != null)
-				list.add(children[i]);
-		}
-		return list;
 	}
 	
 	public List<Node> validChildren(char c){
