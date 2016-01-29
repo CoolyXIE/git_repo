@@ -1,26 +1,27 @@
 package tree;
 
-
 public class TreeNode {
-	int index;
-	double val;
-	TreeNode left ;
-	TreeNode right ;
+	public int val;
+	public TreeNode left ;
+	public TreeNode right ;
 
 	//constructor
-	public TreeNode(int index, double val){
-		this.index = index;
+	public TreeNode(int val){
 		this.val = val;
 	}
 	
-	public TreeNode(double val){
-		this(0, val);
+	public boolean isNullLeft(){
+		return (left==null)?true:false;
+	}
+	public boolean isNullRight(){
+		return (right==null)?true:false;
 	}
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
+		String l = (isNullLeft())?"null":String.valueOf(left.val);
+		String r = (isNullRight())?"null":String.valueOf(right.val);
+		return "val:"+val+"\t" + l + ","+ r;
 	}
 	
 }

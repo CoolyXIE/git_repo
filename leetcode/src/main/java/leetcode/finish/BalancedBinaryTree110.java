@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.finish;
 
 public class BalancedBinaryTree110 {
 	/*
@@ -12,7 +12,7 @@ public class BalancedBinaryTree110 {
 	 * of every node never differ by more than 1.
 	 */
 	
-	TreeNode root;
+	public TreeNode root;
 	public boolean isBalanced(TreeNode root) {
 		if (root == null)
 			return true;
