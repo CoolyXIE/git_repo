@@ -7,8 +7,7 @@ import java.util.List;
 
 import junit.framework.TestCase;
 import leetcode.WordDictionary221;
-
-import com.litb.basic.io.FileHelper;
+import tool.FileHelper;
 
 public class WordDictionary221Test extends TestCase {
 	static List<String> addWordList = new ArrayList<String>();
