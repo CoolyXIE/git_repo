@@ -1,4 +1,4 @@
-package tool;
+package util;
 
 import java.io.BufferedReader;
 
@@ -8,5 +8,4 @@ public class FileHelper {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }
