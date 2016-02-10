@@ -17,8 +17,9 @@ class svm(object):
     n = 0
     dataSet = []
     labelVec = []
-    alpha = zeros(n)
-    u = zeros(n)
+    alpha = []
+    u = []
+    y = []
     
     def violateKKT(self, i):
         if (self.alpha[i] == 0 and self.y[i] * self.u[i] < 1)\
@@ -38,6 +39,7 @@ class svm(object):
             self.dataSet.append([float(lineArr[0]), float(lineArr[1])])
             self.labelVec.append(int(lineArr[2]))
         f.close()
+        self.y = self.labelVec
         
     def SMOSimple(self, C, toler, maxIter):
         dataMat = mat(self.dataSet);
@@ -112,7 +114,10 @@ class svm(object):
         dataMat = mat(self.dataSet);
         n = shape(dataMat)[0]; self.n = n
         b = 0
+        self.u = zeros(n)
+        self.alpha = zeros(n)
         alpha = self.alpha
+        print self.u[0]
         prediction1 = self.u[0]
         prediction2 = self.u[1]
         iter = 0
@@ -195,6 +200,7 @@ def fixAlpha(alpha2, H, L):
     if L > alpha2:
         alpha2 = L
     return alpha2  
+    
     
 svm = svm("E:/data/python/Ch06/testSet.txt")
 print svm.SMONormal(0.6, 0.001, 40)
