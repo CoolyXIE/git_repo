@@ -7,9 +7,6 @@
 	<version>1.0</version>
 	<packaging>jar</packaging>
 
-	<name>common</name>
-	<url>http://maven.apache.org</url>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
