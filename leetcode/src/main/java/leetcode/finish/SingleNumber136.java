@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.finish;
 
 public class SingleNumber136 {
 	/* 	Given an array of integers
@@ -10,8 +10,13 @@ public class SingleNumber136 {
 	 *  Could you implement it without using extra memory?
 	 */
 
-	public int singleNumber(int[] nums) {
-		
+	public static int singleNumber(int[] nums) {
+		int x = 0;
+		for (int i = 0; i < nums.length; i ++)
+			x = x ^ nums[i];
+		for (int i = 0; i < nums.length; i ++)
+			if (nums[i] == x)
+				return i;
 		return 0;
 	}
 }
