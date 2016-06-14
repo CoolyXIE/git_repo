@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1465898546 source:e:\workspace\git_repo\kaggle\digit_recognizer\main.cpp
+	<iostream>
+	<string>
+	"Classifer.h"
+
+1465897249 e:\workspace\git_repo\kaggle\digit_recognizer\classifier.h
+
+1465898615 source:e:\workspace\git_repo\kaggle\digit_recognizer\src\classifer.cpp
+	"Classifer.h"
+
+1465898604 e:\workspace\git_repo\kaggle\digit_recognizer\include\classifer.h
+	<string>
+
