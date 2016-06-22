@@ -1,6 +1,6 @@
 #ifndef CLASSIFER_H
 #define CLASSIFER_H
-
+#include "ImgArr.h"
 #include <string>
 
 class Classifer
@@ -9,7 +9,9 @@ class Classifer
         Classifer();
         virtual ~Classifer();
 
-        int recognize(std::string img_path);
+        int recognize(ImgArr imgArr, const int k);
+
+        vector<ImgArr> loadTrainFile();
 
     protected:
 

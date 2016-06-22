@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1466155954 source:e:\workspace\git_repo\c++\libutil\main.cpp
+	<iostream>
+	<string.h>
+	<fstream>
+	<stdlib.h>
+	<sstream>
+	"DirHelper.h"
+	"CsvHelper.h"
+
+1466155899 source:e:\workspace\git_repo\c++\libutil\src\csvhelper.cpp
+	"CsvHelper.h"
+	<assert.h>
+	<stdio.h>
+	<string.h>
+
+1466152217 e:\workspace\git_repo\c++\libutil\include\csvhelper.h
+	<assert.h>
+	<map>
+	<vector>
+	<string>
+
+1466145647 source:e:\workspace\git_repo\c++\libutil\src\csvreader.cpp
+	"CsvReader.h"
+
+1466145647 e:\workspace\git_repo\c++\libutil\include\csvreader.h
+
+1466145604 source:e:\workspace\git_repo\c++\libutil\src\dirhelper.cpp
+	"DirHelper.h"
+	<iostream>
+	<io.h>
+	<vector>
+	<string.h>
+
+1466145420 e:\workspace\git_repo\c++\libutil\include\dirhelper.h
+	<string>
+	<vector>
+
+1466148156 source:e:\workspace\git_repo\c++\libutil\src\filehelper.cpp
+	"FileHelper.h"
+	<iostream>
+	<io.h>
+	<direct.h>
+	<string.h>
+	<vector>
+	<iomanip>
+	<ctime>
+
+1466148175 e:\workspace\git_repo\c++\libutil\include\filehelper.h
+	<string>
+	<vector>
+
+1466149633 source:e:\workspace\git_repo\c++\libutil\src\iohelper.cpp
+	"IOHelper.h"
+
+1466149633 e:\workspace\git_repo\c++\libutil\include\iohelper.h
+
