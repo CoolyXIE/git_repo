@@ -1,0 +1,17 @@
+cooly\hadoop\WordCount2$WordCountMap.class
+cooly\hadoop\test\TestRecordReader.class
+cooly\hadoop\WordCount1$WordCountMap.class
+cooly\hadoop\WordCount1.class
+cooly\hadoop\test\MyFileInputFormat.class
+cooly\hadoop\ConfPrinter.class
+cooly\hadoop\WordCount2.class
+cooly\hadoop\test\MyReducer.class
+cooly\hadoop\test\MyRecordReader.class
+cooly\hadoop\MaxTemperatureMapper.class
+cooly\hadoop\MaxTemperatureReducer.class
+cooly\hadoop\WordCountMap.class
+cooly\hadoop\WordCount2$WordCountReduce.class
+cooly\hadoop\test\MyMapper.class
+cooly\hadoop\test\MyInputFormat.class
+cooly\hadoop\WordCount1$WordCountReduce.class
+cooly\hadoop\test\MyPartitioner.class

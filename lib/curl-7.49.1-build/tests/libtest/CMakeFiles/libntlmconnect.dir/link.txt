@@ -1,3 +1,0 @@
-D:\Cmake-3.5.2\bin\cmake.exe -E remove -f CMakeFiles\libntlmconnect.dir/objects.a
-D:\CodeBlocks\MinGW\bin\ar.exe cr CMakeFiles\libntlmconnect.dir/objects.a @CMakeFiles\libntlmconnect.dir\objects1.rsp
-D:\CodeBlocks\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\libntlmconnect.dir/objects.a -Wl,--no-whole-archive  -o libntlmconnect.exe -Wl,--out-implib,liblibntlmconnect.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\libntlmconnect.dir\linklibs.rsp

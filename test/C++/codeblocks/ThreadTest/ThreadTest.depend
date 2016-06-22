@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1465803424 source:e:\workspace\codeblocks\threadtest\main.cpp
+	<thread>
+	<iostream>
+	<vector>
+

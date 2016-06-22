@@ -1,3 +1,0 @@
-D:\Cmake-3.5.2\bin\cmake.exe -E remove -f CMakeFiles\tftpd.dir/objects.a
-D:\CodeBlocks\MinGW\bin\ar.exe cr CMakeFiles\tftpd.dir/objects.a @CMakeFiles\tftpd.dir\objects1.rsp
-D:\CodeBlocks\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\tftpd.dir/objects.a -Wl,--no-whole-archive  -o tftpd.exe -Wl,--out-implib,libtftpd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\tftpd.dir\linklibs.rsp

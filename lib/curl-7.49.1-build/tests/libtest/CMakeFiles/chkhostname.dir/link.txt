@@ -1,3 +1,0 @@
-D:\Cmake-3.5.2\bin\cmake.exe -E remove -f CMakeFiles\chkhostname.dir/objects.a
-D:\CodeBlocks\MinGW\bin\ar.exe cr CMakeFiles\chkhostname.dir/objects.a @CMakeFiles\chkhostname.dir\objects1.rsp
-D:\CodeBlocks\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\chkhostname.dir/objects.a -Wl,--no-whole-archive  -o chkhostname.exe -Wl,--out-implib,libchkhostname.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\chkhostname.dir\linklibs.rsp

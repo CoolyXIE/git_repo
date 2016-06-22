@@ -1,0 +1,13 @@
+package test;
+
+import java.io.BufferedReader;
+
+import mysound.FileHelper;
+
+public class Test {
+	public static void main(String[] args) {
+		BufferedReader br = FileHelper.readFile("C:\\Users\\Cooly\\Desktop\\Çà³ÈÊÓ½ç2-Ð»¿Â.wav");
+		String line = br.readLine();
+		br.close();
+	}
+}

@@ -1,0 +1,7 @@
+package sound;
+
+import javax.sound.*;
+
+public class Sound {
+
+}

@@ -1,3 +1,0 @@
-D:\Cmake-3.5.2\bin\cmake.exe -E remove -f CMakeFiles\lib519.dir/objects.a
-D:\CodeBlocks\MinGW\bin\ar.exe cr CMakeFiles\lib519.dir/objects.a @CMakeFiles\lib519.dir\objects1.rsp
-D:\CodeBlocks\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\lib519.dir/objects.a -Wl,--no-whole-archive  -o lib519.exe -Wl,--out-implib,liblib519.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\lib519.dir\linklibs.rsp

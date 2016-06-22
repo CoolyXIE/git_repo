@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Util" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Util" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="D:/OpenCV3.1/build_vs2015/install/include" />
+					<Add directory="D:/OpenCV3.1/build_vs2015/install/include/opencv" />
+					<Add directory="D:/OpenCV3.1/build_vs2015/install/include/opencv2" />
+					<Add directory="../../../lib/boost_1_61_0/include/boost-1_61" />
+				</Compiler>
+				<Linker>
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_aruco310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_bgsegm310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_bioinspired310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_calib3d310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_ccalib310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_core310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_datasets310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_dnn310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_dpm310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_face310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_features2d310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_flann310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_fuzzy310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_highgui310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_imgcodecs310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_imgproc310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_line_descriptor310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_ml310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_objdetect310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_optflow310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_photo310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_plot310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_reg310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_rgbd310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_saliency310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_shape310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_stereo310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_stitching310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_structured_light310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_superres310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_surface_matching310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_text310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_tracking310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_ts310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_video310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_videoio310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_videostab310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_xfeatures2d310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_ximgproc310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_xobjdetect310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib/opencv_xphoto310d.lib" />
+					<Add library="D:/OpenCV3.1/build_vs2015/install/x64/vc14/staticlib/ippicvmt.lib" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_atomic-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_atomic-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_chrono-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_chrono-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_container-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_container-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_context-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_context-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_coroutine-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_coroutine-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_date_time-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_date_time-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_exception-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_exception-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_filesystem-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_filesystem-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_iostreams-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_iostreams-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_locale-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_locale-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_log_setup-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_log_setup-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_log-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_log-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_prg_exec_monitor-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_prg_exec_monitor-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_program_options-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_program_options-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_random-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_random-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_regex-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_regex-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_serialization-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_serialization-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_signals-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_signals-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_system-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_system-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_test_exec_monitor-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_test_exec_monitor-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_thread-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_thread-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_timer-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_timer-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_type_erasure-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_type_erasure-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_unit_test_framework-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_unit_test_framework-mgw49-mt-d-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_wserialization-mgw49-mt-1_61.a" />
+					<Add library="../../../lib/boost_1_61_0/lib/libboost_wserialization-mgw49-mt-d-1_61.a" />
+					<Add directory="D:/OpenCV3.1/build_vs2015/install/x64/vc14/lib" />
+					<Add directory="D:/OpenCV3.1/build_vs2015/install/x64/vc14/staticlib" />
+					<Add directory="../../../lib/boost_1_61_0/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Util" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/CsvHelper.h" />
+		<Unit filename="include/DirHelper.h" />
+		<Unit filename="include/IOHelper.h" />
+		<Unit filename="include/MyBoost.h" />
+		<Unit filename="include/MyOpenCV.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/CsvHelper.cpp" />
+		<Unit filename="src/DirHelper.cpp" />
+		<Unit filename="src/MyBoost.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

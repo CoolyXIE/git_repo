@@ -1,3 +1,0 @@
-D:\Cmake-3.5.2\bin\cmake.exe -E remove -f CMakeFiles\sockfilt.dir/objects.a
-D:\CodeBlocks\MinGW\bin\ar.exe cr CMakeFiles\sockfilt.dir/objects.a @CMakeFiles\sockfilt.dir\objects1.rsp
-D:\CodeBlocks\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\sockfilt.dir/objects.a -Wl,--no-whole-archive  -o sockfilt.exe -Wl,--out-implib,libsockfilt.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\sockfilt.dir\linklibs.rsp

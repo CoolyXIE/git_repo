@@ -1,3 +1,0 @@
-D:\Cmake-3.5.2\bin\cmake.exe -E remove -f CMakeFiles\lib567.dir/objects.a
-D:\CodeBlocks\MinGW\bin\ar.exe cr CMakeFiles\lib567.dir/objects.a @CMakeFiles\lib567.dir\objects1.rsp
-D:\CodeBlocks\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\lib567.dir/objects.a -Wl,--no-whole-archive  -o lib567.exe -Wl,--out-implib,liblib567.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\lib567.dir\linklibs.rsp
