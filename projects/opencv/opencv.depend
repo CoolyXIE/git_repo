@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
-1466588889 source:e:\workspace\git_repo\projects\opencv\src\camera.cpp
+1467195392 source:e:\workspace\git_repo\projects\opencv\src\camera.cpp
 	"Camera.h"
-	"Common.h"
+	"Basic.h"
 	<boost/lexical_cast.hpp>
 
 1466588802 e:\workspace\git_repo\projects\opencv\include\camera.h
@@ -9,12 +9,23 @@
 	<highgui/highgui.hpp>
 	<vector>
 
-1466590657 source:e:\workspace\git_repo\projects\opencv\main.cpp
+1467367594 source:e:\workspace\git_repo\projects\opencv\main.cpp
 	<iostream>
+	<fstream>
+	<stdlib.h>
+	<vector>
 	<boost/lexical_cast.hpp>
+	<boost/dynamic_bitset.hpp>
 	<core/core.hpp>
 	<highgui/highgui.hpp>
-	"Common.h"
+	<imgproc/imgproc.hpp>
+	"Basic.h"
+	"Color.h"
+	"ShapeDetector.h"
+	"Region.h"
+	"Camera.h"
+	"Feature.h"
+	"Retinex.h"
 
 1403743745 d:\opencv3.1\build_codeblocks\install\include\opencv\cv.h
 	"opencv2/core/core_c.h"
@@ -5392,12 +5403,314 @@
 1384390213 d:\opencv3.1\build_codeblocks\install\include\opencv2\highgui\highgui.hpp
 	"opencv2/highgui.hpp"
 
-1466590405 e:\workspace\git_repo\projects\opencv\include\common.h
+1466843109 e:\workspace\git_repo\projects\opencv\include\common.h
+	<core/core.hpp>
+	<highgui/highgui.hpp>
+	<string>
+	<vector>
+	<boost/dynamic_bitset.hpp>
+
+1466843116 source:e:\workspace\git_repo\projects\opencv\src\common.cpp
+	"Common.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<bitset>
+	<imgproc/imgproc.hpp>
+	<boost/dynamic_bitset.hpp>
+
+1384390213 d:\opencv3.1\build_codeblocks\install\include\opencv2\imgproc\imgproc.hpp
+	"opencv2/imgproc.hpp"
+
+1466473757 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\dynamic_bitset.hpp
+	"boost/dynamic_bitset/dynamic_bitset.hpp"
+
+1466473767 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\dynamic_bitset\dynamic_bitset.hpp
+	<assert.h>
+	<string>
+	<stdexcept>
+	<algorithm>
+	<vector>
+	<climits>
+	"boost/dynamic_bitset/config.hpp"
+	<locale>
+	<iostream.h>
+	<ctype.h>
+	<istream>
+	<ostream>
+	"boost/dynamic_bitset_fwd.hpp"
+	"boost/detail/dynamic_bitset.hpp"
+	"boost/detail/iterator.hpp"
+	"boost/move/move.hpp"
+	"boost/limits.hpp"
+	"boost/pending/lowest_bit.hpp"
+	"boost/static_assert.hpp"
+	"boost/utility/addressof.hpp"
+	"boost/detail/no_exceptions_support.hpp"
+	"boost/throw_exception.hpp"
+
+1466473767 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\dynamic_bitset\config.hpp
+	"boost/config.hpp"
+	"boost/detail/workaround.hpp"
+
+1466473757 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\dynamic_bitset_fwd.hpp
+	<memory>
+
+1466473766 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\detail\dynamic_bitset.hpp
+	<memory>
+	<cstddef>
+	"boost/config.hpp"
+	"boost/detail/workaround.hpp"
+
+1466473782 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\move\move.hpp
+	<boost/config.hpp>
+	<boost/move/detail/config_begin.hpp>
+	<boost/move/utility.hpp>
+	<boost/move/iterator.hpp>
+	<boost/move/traits.hpp>
+	<boost/move/algorithm.hpp>
+	<boost/move/detail/config_end.hpp>
+
+1466473782 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\move\utility.hpp
+	<boost/config.hpp>
+	<boost/move/detail/config_begin.hpp>
+	<boost/move/detail/workaround.hpp>
+	<boost/move/utility_core.hpp>
+	<boost/move/traits.hpp>
+	<utility>
+	<boost/move/detail/config_end.hpp>
+
+1466473782 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\move\traits.hpp
+	<boost/config.hpp>
+	<boost/move/detail/config_begin.hpp>
+	<boost/move/core.hpp>
+	<boost/move/detail/meta_utils.hpp>
+	<boost/move/detail/type_traits.hpp>
+	<boost/move/detail/config_end.hpp>
+
+1466473782 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\move\iterator.hpp
+	<boost/config.hpp>
+	<boost/move/detail/config_begin.hpp>
+	<boost/move/detail/workaround.hpp>
+	<boost/move/detail/iterator_traits.hpp>
+	<boost/move/utility_core.hpp>
+	<boost/move/detail/config_end.hpp>
+
+1466473878 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\move\detail\iterator_traits.hpp
+	<boost/config.hpp>
+	<cstddef>
+	<boost/move/detail/type_traits.hpp>
+	<boost/move/detail/std_ns_begin.hpp>
+	<boost/move/detail/std_ns_end.hpp>
+
+1466473782 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\move\algorithm.hpp
+	<boost/config.hpp>
+	<boost/move/detail/config_begin.hpp>
+	<boost/move/utility_core.hpp>
+	<boost/move/iterator.hpp>
+	<boost/move/algo/move.hpp>
+	<boost/detail/no_exceptions_support.hpp>
+	<algorithm>
+	<memory>
+	<boost/move/detail/config_end.hpp>
+
+1466473878 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\move\algo\move.hpp
+	<boost/config.hpp>
+	<boost/move/detail/config_begin.hpp>
+	<boost/move/utility_core.hpp>
+	<boost/move/detail/iterator_traits.hpp>
+	<boost/detail/no_exceptions_support.hpp>
+	<boost/move/detail/config_end.hpp>
+
+1466473787 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\pending\lowest_bit.hpp
+	<assert.h>
+	"boost/pending/integer_log2.hpp"
+
+1466473787 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\pending\integer_log2.hpp
+	<boost/integer/integer_log2.hpp>
+
+1466473776 e:\workspace\lib\boost_1_61_0\include\boost-1_61\boost\integer\integer_log2.hpp
+	<assert.h>
+	<climits>
+	<boost/limits.hpp>
+	<boost/config.hpp>
+
+1466775871 source:e:\workspace\git_repo\projects\opencv\src\extract.cpp
+	"Extract.h"
+	<imgproc/imgproc.hpp>
+
+1466776015 e:\workspace\git_repo\projects\opencv\include\extract.h
+	<core/core.hpp>
+	<highgui/highgui.hpp>
+
+1467195399 source:e:\workspace\git_repo\projects\opencv\src\color.cpp
+	"Color.h"
+	"Basic.h"
+	<math.h>
+	<imgproc/imgproc.hpp>
+
+1466842751 e:\workspace\git_repo\projects\opencv\include\color.h
+	<core/core.hpp>
+	<highgui/highgui.hpp>
+
+1467193591 e:\workspace\git_repo\projects\opencv\include\region.h
+	<core.hpp>
+	<boost/dynamic_bitset.hpp>
+
+1467195413 source:e:\workspace\git_repo\projects\opencv\src\region.cpp
+	"Region.h"
+	"Basic.h"
+	"Color.h"
+	<boost/dynamic_bitset.hpp>
+	<core/core.hpp>
+	<imgproc/imgproc.hpp>
+	<iostream>
+
+1467010801 source:e:\workspace\git_repo\projects\opencv\src\detector.cpp
+	"Detector.h"
+	"Common.h"
+	<opencv2/opencv.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+
+1467010047 e:\workspace\git_repo\projects\opencv\include\detector.h
+	<core/core.hpp>
+
+1467254721 source:e:\workspace\git_repo\projects\opencv\src\feature.cpp
+	"Feature.h"
+	"Basic.h"
+	<core/core.hpp>
+	<xfeatures2d.hpp>
+	<highgui/highgui.hpp>
+	<vector>
+
+1467194550 source:e:\workspace\git_repo\projects\opencv\opencv\main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<vector>
+	<boost/lexical_cast.hpp>
+	<boost/dynamic_bitset.hpp>
+	<core/core.hpp>
+	<highgui/highgui.hpp>
+	<imgproc/imgproc.hpp>
+	"Common.h"
+	"Color.h"
+	"Region.h"
+	"Camera.h"
+	"Detector.h"
+
+1467192386 e:\workspace\git_repo\projects\opencv\opencv\include\common.h
 	<core/core.hpp>
 	<highgui/highgui.hpp>
 	<string>
 	<vector>
 
-1466590667 source:e:\workspace\git_repo\projects\opencv\src\common.cpp
+1466842751 e:\workspace\git_repo\projects\opencv\opencv\include\color.h
+	<core/core.hpp>
+	<highgui/highgui.hpp>
+
+1467192501 e:\workspace\git_repo\projects\opencv\opencv\include\region.h
+	<core.hpp>
+
+1466588802 e:\workspace\git_repo\projects\opencv\opencv\include\camera.h
+	<core/core.hpp>
+	<highgui/highgui.hpp>
+	<vector>
+
+1467010047 e:\workspace\git_repo\projects\opencv\opencv\include\detector.h
+	<core/core.hpp>
+
+1467193599 source:e:\workspace\git_repo\projects\opencv\opencv\src\camera.cpp
+	"Camera.h"
 	"Common.h"
+	<boost/lexical_cast.hpp>
+
+1466841566 source:e:\workspace\git_repo\projects\opencv\opencv\src\color.cpp
+	"Color.h"
+	"Common.h"
+	<math.h>
+	<imgproc/imgproc.hpp>
+
+1467193612 source:e:\workspace\git_repo\projects\opencv\opencv\src\common.cpp
+	"Common.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<bitset>
+	<imgproc/imgproc.hpp>
+	<boost/dynamic_bitset.hpp>
+
+1467194496 source:e:\workspace\git_repo\projects\opencv\opencv\src\feature.cpp
+	"Feature.h"
+	"Common.h"
+	<core/core.hpp>
+	<xfeatures2d.hpp>
+	<highgui/highgui.hpp>
+	<vector>
+
+1467194611 source:e:\workspace\git_repo\projects\opencv\opencv\src\region.cpp
+	"Region.h"
+	"Common.h"
+	"Color.h"
+	<boost/dynamic_bitset.hpp>
+	<core/core.hpp>
+	<imgproc/imgproc.hpp>
+	<iostream>
+
+1467251644 e:\workspace\git_repo\projects\opencv\include\feature.h
+	<features2d/features2d.hpp>
+	<core/core.hpp>
+	<highgui/highgui.hpp>
+	<vector>
+
+1384390213 d:\opencv3.1\build_codeblocks\install\include\opencv2\features2d\features2d.hpp
+	"opencv2/features2d.hpp"
+
+1467193570 e:\workspace\git_repo\projects\opencv\include\basic.h
+	<core/core.hpp>
+	<highgui/highgui.hpp>
+	<string>
+	<vector>
+	<boost/dynamic_bitset.hpp>
+
+1467249976 source:e:\workspace\git_repo\projects\opencv\src\basic.cpp
+	"Basic.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<bitset>
+	<imgproc/imgproc.hpp>
+	<boost/dynamic_bitset.hpp>
+
+1467266371 source:e:\workspace\git_repo\projects\opencv\src\shape.cpp
+
+1467266365 e:\workspace\git_repo\projects\opencv\include\shape.h
+
+1467266568 source:e:\workspace\git_repo\projects\opencv\src\shapedetector.cpp
+	<opencv.hpp>
+	<core/core.hpp>
+	<highgui/highgui.hpp>
+	<imgproc/imgproc.hpp>
+	"ShapeDetector.h"
+	<math.h>
+	<set>
+	<iostream>
+	<vector>
+
+1467266639 e:\workspace\git_repo\projects\opencv\include\shapedetector.h
+	<opencv2/opencv.hpp>
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<iostream>
+	<vector>
+
+1467367462 e:\workspace\git_repo\projects\opencv\include\retinex.h
+	<string>
+	<core/core.hpp>
+
+1467367568 source:e:\workspace\git_repo\projects\opencv\src\retinex.cpp
+	"Retinex.h"
+	"Basic.h"
+	<imgproc/imgproc.hpp>
 

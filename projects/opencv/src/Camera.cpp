@@ -1,5 +1,5 @@
 #include "Camera.h"
-#include "Common.h"
+#include "Basic.h"
 #include <boost/lexical_cast.hpp>
 
 using namespace std;

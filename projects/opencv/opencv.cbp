@@ -13,12 +13,11 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="include" />
 					<Add directory="D:/OpenCV3.1/build_codeblocks/install/include" />
 					<Add directory="D:/OpenCV3.1/build_codeblocks/install/include/opencv" />
 					<Add directory="D:/OpenCV3.1/build_codeblocks/install/include/opencv2" />
-					<Add directory="../Util/include" />
-					<Add directory="../../../lib/boost_1_61_0/include/boost-1_61" />
+					<Add directory="include" />
+					<Add directory="E:/Workspace/lib/boost_1_61_0/include/boost-1_61" />
 				</Compiler>
 				<Linker>
 					<Add library="D:/OpenCV3.1/build_codeblocks/install/x86/mingw/lib/libopencv_aruco310.dll.a" />
@@ -62,9 +61,58 @@
 					<Add library="D:/OpenCV3.1/build_codeblocks/install/x86/mingw/lib/libopencv_ximgproc310.dll.a" />
 					<Add library="D:/OpenCV3.1/build_codeblocks/install/x86/mingw/lib/libopencv_xobjdetect310.dll.a" />
 					<Add library="D:/OpenCV3.1/build_codeblocks/install/x86/mingw/lib/libopencv_xphoto310.dll.a" />
-					<Add library="lib/libUtil.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_atomic-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_atomic-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_chrono-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_chrono-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_container-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_container-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_context-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_context-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_coroutine-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_coroutine-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_date_time-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_date_time-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_exception-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_exception-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_filesystem-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_filesystem-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_iostreams-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_iostreams-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_locale-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_locale-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_log_setup-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_log_setup-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_log-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_log-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_prg_exec_monitor-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_prg_exec_monitor-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_program_options-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_program_options-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_random-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_random-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_regex-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_regex-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_serialization-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_serialization-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_signals-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_signals-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_system-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_system-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_test_exec_monitor-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_test_exec_monitor-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_thread-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_thread-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_timer-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_timer-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_type_erasure-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_type_erasure-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_unit_test_framework-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_unit_test_framework-mgw49-mt-d-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_wserialization-mgw49-mt-1_61.a" />
+					<Add library="E:/Workspace/lib/boost_1_61_0/lib/libboost_wserialization-mgw49-mt-d-1_61.a" />
 					<Add directory="D:/OpenCV3.1/build_codeblocks/install/x86/mingw/lib" />
-					<Add directory="E:/Workspace/git_repo/projects/opencv/lib" />
+					<Add directory="E:/Workspace/lib/boost_1_61_0/lib" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -85,11 +133,20 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="README.txt" />
+		<Unit filename="include/Basic.h" />
 		<Unit filename="include/Camera.h" />
-		<Unit filename="include/Common.h" />
+		<Unit filename="include/Color.h" />
+		<Unit filename="include/Feature.h" />
+		<Unit filename="include/Region.h" />
+		<Unit filename="include/Retinex.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Basic.cpp" />
 		<Unit filename="src/Camera.cpp" />
-		<Unit filename="src/Common.cpp" />
+		<Unit filename="src/Color.cpp" />
+		<Unit filename="src/Feature.cpp" />
+		<Unit filename="src/Region.cpp" />
+		<Unit filename="src/Retinex.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

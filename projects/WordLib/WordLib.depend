@@ -42,3 +42,46 @@
 
 1466560261 e:\workspace\git_repo\wordlib\include\youdaodictapi.h
 
+1466560203 source:e:\workspace\git_repo\projects\wordlib\src\youdaodictapi.cpp
+	"YouDaoDictAPI.h"
+
+1466560261 e:\workspace\git_repo\projects\wordlib\include\youdaodictapi.h
+
+1466593718 source:e:\workspace\git_repo\projects\wordlib\main.cpp
+	<iostream>
+	"curl/curl.h"
+
+1463756342 e:\workspace\lib\curl-7.49.1\include\curl\curl.h
+	"curlver.h"
+	"curlbuild.h"
+	"curlrules.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"typecheck-gcc.h"
+
+1464567410 e:\workspace\lib\curl-7.49.1\include\curl\curlver.h
+
+1464567410 e:\workspace\lib\curl-7.49.1\include\curl\curlbuild.h
+	<sys/types.h>
+	<sys/socket.h>
+
+1458605738 e:\workspace\lib\curl-7.49.1\include\curl\curlrules.h
+
+1458605738 e:\workspace\lib\curl-7.49.1\include\curl\easy.h
+
+1458605738 e:\workspace\lib\curl-7.49.1\include\curl\multi.h
+	"curl.h"
+
+1458605738 e:\workspace\lib\curl-7.49.1\include\curl\typecheck-gcc.h
+
