@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="Util" />
+		<Option title="util" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -138,9 +138,7 @@
 		</Compiler>
 		<Unit filename="include/CsvHelper.h" />
 		<Unit filename="include/DirHelper.h" />
-		<Unit filename="include/IOHelper.h" />
 		<Unit filename="include/MyBoost.h" />
-		<Unit filename="include/MyOpenCV.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/CsvHelper.cpp" />
 		<Unit filename="src/DirHelper.cpp" />

@@ -58,4 +58,7 @@ void dyBitset2Mat(boost::dynamic_bitset<> &bset, Mat &img);
 //把二值串按照图像规格保存下来，使用notepad++打开非常清楚
 void saveBistSet(boost::dynamic_bitset<> &bset, int cols, string filePath);
 
+
+vector<Point> Point2f_toPoint(vector<Point2f> points2f);
+vector<Point2f> Point_toPoint2f(vector<Point> points);
 #endif // HELPER_H

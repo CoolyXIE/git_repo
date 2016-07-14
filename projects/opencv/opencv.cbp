@@ -138,15 +138,23 @@
 		<Unit filename="include/Camera.h" />
 		<Unit filename="include/Color.h" />
 		<Unit filename="include/Feature.h" />
+		<Unit filename="include/Matcher.h" />
 		<Unit filename="include/Region.h" />
 		<Unit filename="include/Retinex.h" />
+		<Unit filename="include/Shape.h" />
+		<Unit filename="include/ShapeDetector.h" />
+		<Unit filename="include/ShapeTransfer.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Basic.cpp" />
 		<Unit filename="src/Camera.cpp" />
 		<Unit filename="src/Color.cpp" />
 		<Unit filename="src/Feature.cpp" />
+		<Unit filename="src/Matcher.cpp" />
 		<Unit filename="src/Region.cpp" />
 		<Unit filename="src/Retinex.cpp" />
+		<Unit filename="src/Shape.cpp" />
+		<Unit filename="src/ShapeDetector.cpp" />
+		<Unit filename="src/ShapeTransfer.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

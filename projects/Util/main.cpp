@@ -1,17 +1,14 @@
 #include "CsvHelper.h"
 #include "DirHelper.h"
-#include "MyOpenCV.h"
-#include "IOHelper.h"
 #include "MyBoost.h"
-#include "svm.h"
 #include <stdlib.h>
 #include <stdio.h>
-
 #include <iterator>
 #include <algorithm>
+#include <ostream>
 #include <boost/lambda/lambda.hpp>
 
-
+using namespace std;
 
 void getFiles(string path, vector<string>& files) {
     //нд╪Ч╬Д╠З
@@ -43,28 +40,26 @@ void testDirHelper() {
 }
 
 void testCsvHelper() {
-    CsvHelper csvHelper = CsvHelper("E:\\Workspace\\git_repo\\kaggle\\Digit_Recognizer\\data\\train_part.csv");
-
-    for (int i = 1; i <= csvHelper.getCSVMap().size(); i ++) {
-        vector<string> stringVec;
-        csvHelper.getVecFromLine(2, stringVec);
-        string path = "E:\\Workspace\\git_repo\\kaggle\\Digit_Recognizer\\data\\train_img\\";
-        cout << i << endl;
-
-        stringstream stream;
-        stream << i;
-        string num = stream.str();
-        path.append(num);
-        path.append(".txt");
-        ofstream ofile(path);
-        for(int i = 0; i < 28; i ++) {
-            for (int j = 0; j < 28; j ++) {
-                ofile << stringVec[i*28+j] << "\t";
-            }
-            ofile << endl;
-        }
-        ofile.close();
-    }
+//    CsvHelper csvHelper = CsvHelper("E:\\Workspace\\git_repo\\kaggle\\Digit_Recognizer\\data\\train_part.csv");
+//    for (int i = 1; i <= csvHelper.getCSVMap().size(); i ++) {
+//        vector<string> stringVec;
+//        csvHelper.getVecAtLine(2, stringVec);
+//        string path = "E:\\Workspace\\git_repo\\kaggle\\Digit_Recognizer\\data\\train_img\\";
+//        cout << i << endl;
+//        stringstream stream;
+//        stream << i;
+//        string num = stream.str();
+//        path.append(num);
+//        path.append(".txt");
+//        ofstream ofile(path);
+//        for(int i = 0; i < 28; i ++) {
+//            for (int j = 0; j < 28; j ++) {
+//                ofile << stringVec[i*28+j] << "\t";
+//            }
+//            ofile << endl;
+//        }
+//        ofile.close();
+//    }
 }
 
 void testBoost() {
@@ -77,74 +72,6 @@ void testBoost() {
     }
 }
 
-
-
-//void testSVM() {
-//
-//
-//    struct svm_parameter param = {
-//        .svm_type = C_SVC,
-//        .kernel_type = RBF
-//    };
-//    struct svm_node x11 = {1, 0.1};
-//    struct svm_node x12 = {2, 0.1};
-//
-//    struct svm_node x21 = {1, 0.1};
-//    struct svm_node x22 = {2, 0.9};
-//
-//    struct svm_node x31 = {1, 0.9};
-//    struct svm_node x32 = {2, 0.1};
-//
-//    struct svm_node x41 = {1, 0.9};
-//    struct svm_node x42 = {2, 0.9};
-//
-//    struct svm_node x2[4][2] = {
-//        x11,x12,x21,x22,x31,x32,x41,x42
-//    };
-//
-//
-//
-//    struct svm_node **x;
-//    x = new svm_node*[4];
-//    for(int i = 0; i < 4; i ++){
-//        x[i] = new svm_node[2];
-//    }
-//
-//    **x = x11;
-//    *(*x+1) = x12;
-//    *(*(x+1)) = x21;
-//    *(*(x+1)+1) = x22;
-//    *(*(x+2)) = x31;
-//    *(*(x+2)+1) = x32;
-//    *(*(x+3)) = x41;
-//    *(*(x+3)+1) = x42;
-//
-//    int l = 4;
-//    double *y;
-//    y = new double[4];
-//    *y = 1;
-//    *(y+1) = 2;
-//    *(y+2) = 2;
-//    *(y+3) = 1;
-//
-//    struct svm_problem problem = {
-//        l, y, x
-//    };
-//    cout << "sf";
-//    struct svm_model* model = svm_train(&problem, &param);
-//
-////    struct svm_node test1 = {1, 0.2};
-////    struct svm_node test2 = {2, 0.2};
-////    struct svm_node test0[2];
-//
-////    struct svm_node *test = (struct svm_node*)test0;
-////    *test = test1;
-////    *(test+1) = test2;
-////    cout << svm_predict(model, test);
-//}
-
-
 int main() {
-//    testSVM();
     return 0;
 }

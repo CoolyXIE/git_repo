@@ -1,19 +1,24 @@
 # depslib dependency file v1.0
-1467195392 source:e:\workspace\git_repo\projects\opencv\src\camera.cpp
+1468390548 source:e:\workspace\git_repo\projects\opencv\src\camera.cpp
 	"Camera.h"
 	"Basic.h"
+	<iostream>
 	<boost/lexical_cast.hpp>
 
-1466588802 e:\workspace\git_repo\projects\opencv\include\camera.h
+1468381232 e:\workspace\git_repo\projects\opencv\include\camera.h
 	<core/core.hpp>
 	<highgui/highgui.hpp>
 	<vector>
 
-1467367594 source:e:\workspace\git_repo\projects\opencv\main.cpp
+1468463144 source:e:\workspace\git_repo\projects\opencv\main.cpp
 	<iostream>
 	<fstream>
 	<stdlib.h>
 	<vector>
+	<boost/lexical_cast.hpp>
+	<boost/algorithm/string.hpp>
+	<iostream>
+	<string>
 	<boost/lexical_cast.hpp>
 	<boost/dynamic_bitset.hpp>
 	<core/core.hpp>
@@ -21,11 +26,14 @@
 	<imgproc/imgproc.hpp>
 	"Basic.h"
 	"Color.h"
+	"Shape.h"
 	"ShapeDetector.h"
+	"ShapeTransfer.h"
 	"Region.h"
 	"Camera.h"
 	"Feature.h"
 	"Retinex.h"
+	"../util/include/DirHelper.h"
 
 1403743745 d:\opencv3.1\build_codeblocks\install\include\opencv\cv.h
 	"opencv2/core/core_c.h"
@@ -327,7 +335,7 @@
 1466588495 source:e:\workspace\git_repo\projects\opencv\src\helper.cpp
 	"Helper.h"
 
-1466584791 e:\workspace\git_repo\projects\util\include\myboost.h
+1467945625 e:\workspace\git_repo\projects\util\include\myboost.h
 	<boost/lexical_cast.hpp>
 	<boost/algorithm/string.hpp>
 	<iostream>
@@ -5575,10 +5583,11 @@
 1467010047 e:\workspace\git_repo\projects\opencv\include\detector.h
 	<core/core.hpp>
 
-1467254721 source:e:\workspace\git_repo\projects\opencv\src\feature.cpp
+1468395423 source:e:\workspace\git_repo\projects\opencv\src\feature.cpp
 	"Feature.h"
 	"Basic.h"
 	<core/core.hpp>
+	<opencv.hpp>
 	<xfeatures2d.hpp>
 	<highgui/highgui.hpp>
 	<vector>
@@ -5657,7 +5666,7 @@
 	<imgproc/imgproc.hpp>
 	<iostream>
 
-1467251644 e:\workspace\git_repo\projects\opencv\include\feature.h
+1467877443 e:\workspace\git_repo\projects\opencv\include\feature.h
 	<features2d/features2d.hpp>
 	<core/core.hpp>
 	<highgui/highgui.hpp>
@@ -5666,14 +5675,14 @@
 1384390213 d:\opencv3.1\build_codeblocks\install\include\opencv2\features2d\features2d.hpp
 	"opencv2/features2d.hpp"
 
-1467193570 e:\workspace\git_repo\projects\opencv\include\basic.h
+1467882357 e:\workspace\git_repo\projects\opencv\include\basic.h
 	<core/core.hpp>
 	<highgui/highgui.hpp>
 	<string>
 	<vector>
 	<boost/dynamic_bitset.hpp>
 
-1467249976 source:e:\workspace\git_repo\projects\opencv\src\basic.cpp
+1468028376 source:e:\workspace\git_repo\projects\opencv\src\basic.cpp
 	"Basic.h"
 	<iostream>
 	<fstream>
@@ -5682,22 +5691,108 @@
 	<imgproc/imgproc.hpp>
 	<boost/dynamic_bitset.hpp>
 
-1467266371 source:e:\workspace\git_repo\projects\opencv\src\shape.cpp
+1468394303 source:e:\workspace\git_repo\projects\opencv\src\shape.cpp
+	"Shape.h"
+	<vector>
+	<math.h>
+	"Basic.h"
 
-1467266365 e:\workspace\git_repo\projects\opencv\include\shape.h
+1468394289 e:\workspace\git_repo\projects\opencv\include\shape.h
+	<opencv2/opencv.hpp>
+	<opencv2/core/core.hpp>
+	<vector>
+	<map>
 
-1467266568 source:e:\workspace\git_repo\projects\opencv\src\shapedetector.cpp
-	<opencv.hpp>
-	<core/core.hpp>
-	<highgui/highgui.hpp>
-	<imgproc/imgproc.hpp>
+1468403765 source:e:\workspace\git_repo\projects\opencv\src\shapedetector.cpp
+	<opencv2/opencv.hpp>
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc/imgproc.hpp>
 	"ShapeDetector.h"
+	"Basic.h"
+	"Camera.h"
+	"Shape.h"
 	<math.h>
 	<set>
 	<iostream>
 	<vector>
 
-1467266639 e:\workspace\git_repo\projects\opencv\include\shapedetector.h
+1468404064 e:\workspace\git_repo\projects\opencv\include\shapedetector.h
+	<opencv2/opencv.hpp>
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<iostream>
+	"Shape.h"
+	<vector>
+
+1467367462 e:\workspace\git_repo\projects\opencv\include\retinex.h
+	<string>
+	<core/core.hpp>
+
+1467367831 source:e:\workspace\git_repo\projects\opencv\src\retinex.cpp
+	"Retinex.h"
+	"Basic.h"
+	<math.h>
+	<iostream>
+	<imgproc/imgproc.hpp>
+
+1468377321 source:e:\workspace\git_repo\projects\opencv\src\shapetransfer.cpp
+	<opencv.hpp>
+	<core/core.hpp>
+	<highgui/highgui.hpp>
+	<imgproc/imgproc.hpp>
+	"xfeatures2d.hpp"
+	"ShapeDetector.h"
+	"ShapeTransfer.h"
+	"Matcher.h"
+	"Basic.h"
+	"Shape.h"
+	<math.h>
+	<set>
+	<iostream>
+	<vector>
+
+1468315592 e:\workspace\git_repo\projects\opencv\include\shapetransfer.h
+	<opencv2/opencv.hpp>
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<iostream>
+	<vector>
+	"Matcher.h"
+
+1468395351 source:e:\workspace\git_repo\projects\opencv\src\matcher.cpp
+	"Shape.h"
+	"Feature.h"
+	"Matcher.h"
+	<core/core.hpp>
+	<opencv.hpp>
+	<xfeatures2d.hpp>
+	"Basic.h"
+	<vector>
+
+1468394763 e:\workspace\git_repo\projects\opencv\include\matcher.h
+	"Feature.h"
+	<xfeatures2d.hpp>
+	<vector>
+
+1467964686 source:e:\workspace\git_repo\projects\opencv\src\shapetransfer2.cpp
+	"ShapeDetector.h"
+	"ShapeTransfer2.h"
+	"ShapeTransfer.h"
+	"Basic.h"
+	<opencv2/opencv.hpp>
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	"xfeatures2d.hpp"
+	<math.h>
+	<set>
+	<iostream>
+	<vector>
+
+1467964702 e:\workspace\git_repo\projects\opencv\include\shapetransfer2.h
 	<opencv2/opencv.hpp>
 	<opencv2/core/core.hpp>
 	<opencv2/highgui/highgui.hpp>
@@ -5705,12 +5800,9 @@
 	<iostream>
 	<vector>
 
-1467367462 e:\workspace\git_repo\projects\opencv\include\retinex.h
-	<string>
-	<core/core.hpp>
-
-1467367568 source:e:\workspace\git_repo\projects\opencv\src\retinex.cpp
-	"Retinex.h"
-	"Basic.h"
-	<imgproc/imgproc.hpp>
+1467945570 e:\workspace\git_repo\projects\util\include\dirhelper.h
+	<vector>
+	<iostream>
+	<io.h>
+	<string.h>
 

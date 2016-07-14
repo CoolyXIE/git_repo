@@ -9,7 +9,7 @@
 using namespace std;
 using namespace cv;
 
-enum{SIFT, SURF};
+enum{SURF, SIFT,};
 
 class Feature{
 private:
@@ -19,13 +19,12 @@ private:
     Mat descriptors;
 
 public:
-    Feature();
-    Feature(int algorithm);
+    Feature(int algorithm = 0);
     ~Feature();
 
     //‘ÿ»ÎÕº∆¨
     void loadImg(string imgPath);
-    void loadImg(Mat img);
+    void loadImg(Mat &img);
 
     //º∆À„Ãÿ’˜µ„
     void detectAndCompute();
@@ -39,15 +38,7 @@ public:
 
     //ª≠Õº∫Ø ˝
     Mat drawKeyPoints();
-    Mat drawMatches(Feature &img, vector<DMatch> &matches);
-
-    //∆•≈‰
-    vector<DMatch> BFmatch(Feature &img);
-
 };
 
 #endif // FEATURE_H
-
-vector<DMatch> BFmatch(Feature &img1, Feature &img2);
-Mat drawMatches(Feature &img1, Feature &img2, vector<DMatch> &matches);
 

@@ -9,22 +9,23 @@ using namespace std;
 using namespace cv;
 
 
-class Camera{
-    public:
-        Camera();  //初始化摄像头
-        virtual ~Camera();
+class Camera {
+public:
+    Camera();  //初始化摄像头
+    virtual ~Camera();
 
-        //get member
-        double getFps();
+    //get member
+    double getFps();
+    Mat getFrame();
+    void saveFrame(string filePath);
 
-        //
-        Mat getFrame();
-        void getFrameVec(vector<Mat> &imgVec, int max, double f);
-    protected:
+    vector<Mat> getFramesBySpace(bool saveOnDist = false, string dirPath = ".");
+    void getFrameVec(vector<Mat> &imgVec, int max, double f);
+protected:
 
-    private:
-        VideoCapture capture;
-        double fps;
+private:
+    VideoCapture capture;
+    double fps;
 };
 
 #endif // CAMERA_H

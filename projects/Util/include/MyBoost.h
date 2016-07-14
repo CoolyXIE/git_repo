@@ -11,24 +11,15 @@ using namespace std;
 class MyBoost
 {
     public:
-        MyBoost();
-        virtual ~MyBoost();
-
-
-        //regex
+        MyBoost(){};
+        virtual ~MyBoost(){};
 
         //string
         static int string2int(string s);
         static double string2double(string s);
         static string double2string(double a);
 
-        static void split(string line, vector<string>& result, string delim="\t");
-        //thread
-
-        //data structure
-
-    protected:
-
+        static void split(string line, vector<string>& result, string delim = "\t");
     private:
 };
 

@@ -7,39 +7,31 @@
 #include <string.h>
 
 using namespace std;
-
 typedef unsigned long  u32;
 
 class CsvHelper{
 private:
-	map<u32, map<u32, string>> m_stringMap;
+	map<u32, map<u32, string>> stringMap;
 	string m_CSVName;
 public:
-
-	CsvHelper();
+    //constructor
+	CsvHelper(){};
 	CsvHelper(const char *filePath);
-	~CsvHelper();
+	~CsvHelper(){};
 
-	bool loadCSV(const char *filePath);
-	bool saveCSV(const char *filePath = NULL);
+	bool loadCSV(const char *filePath);//to-do
+	bool saveCSV(const char *filePath = NULL); //to-do
 
-    string* getStringValue(u32 uiRow, u32 uiCol);
+	//get
 	map<u32, map<u32, string>>& getCSVMap();
 
-	int parseLineToVec(string str, vector<string> &stringVec);
+    //unit
+    string* getStringValue(u32 row, u32 col);
 
-    void getVecFromLine(int lineNum, vector<string>& stringVec);
-
-
-
-//	bool getIntValue(U32 uiRow, U32 uiCol, int &riValue);
-//	bool getFloatValue(U32 uiRow, U32 uiCol, float &rfValue);
-
-
+	int parseLineToVec(string line, vector<string> &stringVec, char delim = ',');
+    void getVecAtLine(int lineNum, vector<string>& stringVec);
 
 //	int getParamFromString(string str, vector<string> &stringVec, char delim  = ',');
-
 //	void getSkillRecordMapTable(map<int, SkillRecord> &sSkillMapTable);
 };
-
 #endif // CSVHELPER_H

@@ -9,6 +9,8 @@
 using namespace std;
 using namespace cv;
 
+
+
 int Max(int a, int b) {
     if (a >= b)
         return a;
@@ -151,7 +153,6 @@ void mat2DyBitset(Mat &img, boost::dynamic_bitset<> &bset) {
                 bset[i*cols+j] = 1;
             }
         }
-
     }
 }
 
@@ -173,6 +174,23 @@ void saveBistSet(boost::dynamic_bitset<> &bset, int cols, string filePath) {
     ofile.close();
 }
 
+vector<Point> Point2f_toPoint(vector<Point2f> points2f){
+    vector<Point> points;
+    for(int i = 0; i < points2f.size(); i ++){
+        Point2f p = points2f[i];
+        points.push_back(Point((int)p.x, (int)p.y));
+    }
+    return points;
+}
+
+vector<Point2f> Point_toPoint2f(vector<Point> points){
+    vector<Point2f> points2f;
+    for(int i = 0; i < points.size(); i ++){
+        Point p = points[i];
+        points2f.push_back(Point2f(p.x, p.y));
+    }
+    return points2f;
+}
 
 
 

@@ -1,6 +1,7 @@
 #include "Feature.h"
 #include "Basic.h"
 #include <core/core.hpp>
+#include <opencv.hpp>
 #include <xfeatures2d.hpp>
 #include <highgui/highgui.hpp>
 #include <vector>
@@ -8,11 +9,7 @@
 using namespace cv;
 using namespace std;
 
-Feature::Feature() {
-    //ctor
-}
-
-Feature::Feature(int algorithm){
+Feature::Feature(int algorithm) {
     this->algorithm = algorithm;
 }
 
@@ -22,6 +19,10 @@ Feature::~Feature() {
 
 void Feature::loadImg(string imgPath) {
     this->img = imread(imgPath);
+}
+
+void Feature::loadImg(Mat &img) {
+    this->img = img;
 }
 
 void Feature::detect() {
@@ -35,6 +36,9 @@ void Feature::detect() {
 }
 
 void Feature::compute() {
+    if(this->getKeyPoints().size() == 0)
+        return ;
+
     if(algorithm == SIFT) {
         cv::Ptr<cv::Feature2D> siftPtr = cv::xfeatures2d::SIFT::create();
         siftPtr->compute(this->img, this->keypoints, this->descriptors);
@@ -62,40 +66,12 @@ Mat &Feature::getDescriptors() {
     return this->descriptors;
 }
 
-
-//∆•≈‰
-vector<DMatch> Feature::BFmatch(Feature &img) {
-    vector<DMatch> matches;
-    cv::BFMatcher matcher(cv::NORM_L2);
-    matcher.match(this->descriptors, img.getDescriptors(), matches);
-    return matches;
-}
-
-vector<DMatch> BFmatch(Feature &img1, Feature &img2){
-    vector<DMatch> matches;
-    BFMatcher matcher(NORM_L2);
-    matcher.match(img1.getDescriptors(), img2.getDescriptors(), matches);
-    return matches;
-}
-
-
 //ª≠Õº∫Ø ˝
-Mat Feature::drawKeyPoints(){
+Mat Feature::drawKeyPoints() {
     Mat out;
     cv::drawKeypoints(this->img, this->keypoints, out);
     showImg(out, "Ãÿ’˜µ„");
-}
-
-Mat Feature::drawMatches(Feature &img, vector<DMatch> &matches){
-    Mat out;
-    cv::drawMatches(this->img, this->getKeyPoints(), img.getSrcImg(), img.getKeyPoints(), matches, out);
-    showImg(out, "∆•≈‰Õº∆¨");
     return out;
 }
-
-
-//≤‚ ‘∫Ø ˝
-
-
 
 

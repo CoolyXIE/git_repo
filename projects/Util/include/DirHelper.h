@@ -8,23 +8,25 @@
 
 using namespace std;
 
-class DirHelper
-{
+class DirHelper{
     public:
-        DirHelper();
-        DirHelper(string dir);
-        virtual ~DirHelper();
+        DirHelper(){};
+        DirHelper(string dirPath);
+        virtual ~DirHelper(){};
 
-        string getDirName();
+        string getDirPath();
 
+        //得到文件夹下指定后缀名的所有文件名
         vector<string> getSpecFiles(string exd);
+        //得到文件夹下所有的文件
         vector<string> getIncludeFiles(bool includeDir = true);
-
-    protected:
-
-
     private:
-        string dirName;
+        string dirPath;
 };
+
+
 void getRecursiveFiles(string dirPath, vector<string>& files);
+bool isDir(string filePath); //to-do
+
+
 #endif // DIRHELPER_H

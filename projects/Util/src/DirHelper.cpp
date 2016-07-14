@@ -1,21 +1,12 @@
 #include "DirHelper.h"
 
-DirHelper::DirHelper(){
 
-
-
-    //ctor
-}
-DirHelper::DirHelper(string dir){
-    this->dirName = dir;
+DirHelper::DirHelper(string dirPath){
+    this->dirPath = dirPath;
 }
 
-DirHelper::~DirHelper(){
-    //dtor
-}
-
-string DirHelper::getDirName(){
-    return this->dirName;
+string DirHelper::getDirPath(){
+    return this->dirPath;
 }
 
 vector<string> DirHelper::getSpecFiles(string exd){
@@ -23,7 +14,7 @@ vector<string> DirHelper::getSpecFiles(string exd){
     long   hFile   =   0;
     struct _finddata_t fileinfo;
     string exdName, pathName;
-    string path = this->dirName;
+    string path = this->dirPath;
     if (0 != strcmp(exd.c_str(), ""))
     {
         exdName = "\\*." + exd;
@@ -53,7 +44,7 @@ vector<string> DirHelper::getIncludeFiles(bool includeDir){
     long   hFile   =   0;
     struct _finddata_t fileinfo;
     string pathName;
-    string path = this->dirName;
+    string path = this->dirPath;
     string exdName = "\\*";
     if((hFile = _findfirst(pathName.assign(path).append(exdName).c_str(),&fileinfo)) !=  -1)
     {
